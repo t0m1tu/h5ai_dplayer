@@ -20,9 +20,14 @@
     - styles: array of strings
     */
     "resources": {
-        "scripts": [],
+        "scripts": [
+            "flv.min.js",
+            "hls.min.js",
+            "DPlayer.min.js"
+        ],
         "styles": [
-            "//fonts.googleapis.com/css?family=Ubuntu:300,400,700%7CUbuntu+Mono:400,700"
+            "//fonts.googleapis.com/css?family=Ubuntu:300,400,700%7CUbuntu+Mono:400,700",
+            "DPlayer.min.css"
         ]
     },
 
@@ -65,7 +70,7 @@
         "fastBrowsing": true,
         "fonts": ["Ubuntu", "Roboto", "Helvetica", "Arial", "sans-serif"],
         "fontsMono": ["Ubuntu Mono", "Monaco", "Lucida Sans Typewriter", "monospace"],
-        "hidden": ["^\\.", "^_h5ai"],
+        "hidden": ["^\\.", "^_h5ai", "\\.m3u8$", "\\.ts$", "^robots.txt"],
         "hideFolders": false,
         "hideIf403": true,
         "hideParentFolder": false,
@@ -392,5 +397,9 @@
         "maxSubfolders": 50,
         "naturalSort": true,
         "ignorecase": true
+    },
+
+    "password": {
+        "enabled": true
     }
 }
